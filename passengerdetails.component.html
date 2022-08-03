@@ -1,0 +1,48 @@
+<form [formGroup]="bookform">
+    <div class="form-group">
+      <label >Name</label>
+        <input type="text" class="form-control" id="name"  placeholder="name" formControlName="name">
+    </div>
+    <div class="form-group">
+      <label >Address</label>
+      <input type="text" class="form-control" id="address" placeholder="address" formControlName="address">
+    </div>
+    <div class="form-group">
+    <label >Age</label>
+        <input type="Number" class="form-control" id="age"  placeholder="age" formControlName="age">
+
+    </div>
+    
+     <label>QuotaType</label>
+    <select formControlName="quotaType" id="quotaType">
+        <option value="general">General</option>
+        <option value="womens">womens</option>
+        <option value="Handicaped">Handicaped</option>
+        <option value="Seniorcitizen">Seniorcitizen</option>
+      </select>
+      <label>Classtype</label>
+
+      <select formControlName="ClassType" id="ClassType">
+        <option value="1st Ac">1st Ac</option>
+        <option value="2nd Ac">2nd Ac</option>
+        <option value="3rd Ac">3rd Ac</option>
+        <option value="General">General</option>
+      </select>
+
+     
+     
+        
+     
+     <input type="radio" id="gender" formControlName="gender" value="Male">
+     <label for="gender">Male</label><br>
+
+    <input type="radio" id="gender" formControlName="gender" value="Female">
+     <label for="gender">Female</label><br>
+<input type="radio" id="gender" formControlName="gender" value="Others">
+    <label for="gender">Others</label>
+    <label >SeatNo</label>
+        <input type="Number" class="form-control" id="age"  placeholder="age" formControlName="age">
+
+    
+    <button (click)="book()" >Search</button>
+  </form>
